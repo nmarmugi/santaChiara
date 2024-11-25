@@ -1,0 +1,63 @@
+.containerBar {
+	width: 300px;
+	height: 5px;
+	background-color: #FFAAAA;
+	position: relative;
+	border-radius: 6px;
+}
+
+.progressBar1 {
+	position: absolute;
+	width: 300px;
+	height: 5px;
+	left: 0;
+	top: 0;
+	background-color: #399918;
+	width: 30%;
+	z-index: 10;
+}
+
+.progressBar2 {
+	position: absolute;
+	width: 300px;
+	height: 5px;
+	left: 0;
+	top: 0;
+	background-color: #399918;
+	width: 60%;
+	z-index: 10;
+}
+
+.progressBar3 {
+	position: absolute;
+	width: 300px;
+	height: 5px;
+	left: 0;
+	top: 0;
+	background-color: #399918;
+	width: 100%;
+	z-index: 10;
+}
+
+.containerBalls {
+	position: absolute;
+	top: -12px;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.ball {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #FFAAAA;
+}
+
+.ballGreen {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: #399918;
+}
