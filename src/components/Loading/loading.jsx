@@ -1,4 +1,5 @@
 import './loading.css'
+import audio from './audio.mp3'
 
 export default function Loading() {
 	return (
@@ -13,6 +14,9 @@ export default function Loading() {
 					<div className="load"></div>
 				</div>
 			</div>
+			<audio autoPlay loop>
+				<source src={audio} type="audio/mpeg" />
+			</audio>
 		</div>
 	)
 }

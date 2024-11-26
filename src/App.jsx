@@ -12,7 +12,7 @@ function App() {
 
   setTimeout(() => {
     setLoad(false)
-  }, 5000)
+  }, 9500)
 
   return (
     <GlobalState.Provider value={{point, setPoint}}>
