@@ -9,10 +9,10 @@ export default function Bar() {
 		<div className="containerBar">
 			<div className={point >= 3 ? "progressBar3" : point >= 2 ? "progressBar2" : point >= 1 ? "progressBar1" : "progressBar0"}></div>
 			<div className='containerBalls'>
-				<div className={point >= 0 ? 'ballGreen' : 'ball'}></div>
-				<div className={point >= 1 ? 'ballGreen' : 'ball'}></div>
-				<div className={point >= 2 ? 'ballGreen' : 'ball'}></div>
-				<div className={point >= 3 ? 'ballGreen' : 'ball'}></div>
+				<img className={point >= 0 ? 'ballGreen' : 'ball'} src="/bauble_3697609.png" alt="Ball" />
+				<img className={point >= 1 ? 'ballGreen' : 'ball'} src="/bauble-ball_18344719.png" alt="Ball" />
+				<img className={point >= 2 ? 'ballGreen' : 'ball'} src="/christmas-ball_3882498.png" alt="Ball" />
+				<img className={point >= 3 ? 'ballGreen' : 'ball'} src="/christmas-ball_9115194.png" alt="Ball" />
 			</div>
 		</div>
 	)

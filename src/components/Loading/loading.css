@@ -57,7 +57,7 @@
 .load {
 	width: 30px;
 	height: 30px;
-	border: 2px solid white;
+	border: 2px solid #BE8B39;
 	border-top: none;
 	border-radius: 50%;
 	animation: load 0.35s linear infinite;
