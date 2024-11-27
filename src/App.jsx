@@ -71,12 +71,12 @@ function App() {
         {
           point === 4 &&
         <div className="containerLetter">
+          <img className="yago" src="/yago-removebg-preview.png" alt="Yago" />
           <div>
             Tanti Auguri di Natale amore mio!
             Siccome quest'anno hai fatto la brava
             ecco qua il premio per un quiz difficilissimo!
             <img className="premio" src="/bamba-ceramiccare-2in1-airglam-b.png" alt="Air Wrap"></img>
-            <img className="yago" src="/yago-removebg-preview.png" alt="Yago" />
           </div>
         </div>
         }
