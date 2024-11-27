@@ -119,7 +119,7 @@
 .yago {
 	width: 200px;
 	position: absolute;
-	top: -40px;
+	top: -25px;
 	right: -40px;
 	animation: yago 3s infinite;
 }
