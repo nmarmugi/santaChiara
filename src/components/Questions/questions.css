@@ -49,7 +49,7 @@ span {
 	align-items: center;
 	text-align: center;
 	font-weight: bold;
-	min-height: 100px;
+	min-height: 70px;
 }
 
 .questionRight {
@@ -63,6 +63,7 @@ span {
 	text-align: center;
 	background-color: #497B58;
 	font-weight: bold;
+	min-height: 70px;
 }
 
 .questionNo {
@@ -77,6 +78,7 @@ span {
 	background-color: #FA5555;
 	color: white;
 	font-weight: bold;
+	min-height: 70px;
 }
 
 .chiaraX {
