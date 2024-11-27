@@ -4,8 +4,10 @@
 	border-radius: 12px;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	gap: 20px;
 	position: relative;
+	min-height: 585px;
 }
 
 .containerQuestions p {
@@ -16,6 +18,11 @@
 
 span {
 	font-size: 18px;
+}
+
+.chiSono {
+	font-weight: bold;
+	letter-spacing: 0.2em;
 }
 
 .questionsGroup {
@@ -42,6 +49,7 @@ span {
 	align-items: center;
 	text-align: center;
 	font-weight: bold;
+	min-height: 100px;
 }
 
 .questionRight {
@@ -69,4 +77,9 @@ span {
 	background-color: #FA5555;
 	color: white;
 	font-weight: bold;
+}
+
+.chiaraX {
+	width: 50px;
+	position: relative;
 }

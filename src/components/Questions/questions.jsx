@@ -4,6 +4,7 @@ import { GlobalState } from '../../App'
 
 export default function Questions() {
 	const {point, setPoint} = useContext(GlobalState);
+	const [chiara, setChiara] = useState(false)
 	const [firstQuestions, setFirstQuestions] = useState({
 		first: true,
 		second: true,
@@ -24,6 +25,7 @@ export default function Questions() {
 	})
 
 	function handleRight(questionKey, setFirstQuestions) {
+		setChiara(false)
 		setPoint((prevState) => prevState + 1);
 		setFirstQuestions((prevState) => ({
 			...prevState,
@@ -32,6 +34,7 @@ export default function Questions() {
 	}
 
 	function handleWrong(questionKey, setFirstQuestions) {
+		setChiara(true)
 		setFirstQuestions((prevState) => ({
 			...prevState,
 			[questionKey]: false,
@@ -39,6 +42,7 @@ export default function Questions() {
 	}
 
 	return (
+		<>
 		<div className='containerQuestions'>
 			{
 				point === 0 &&
@@ -49,7 +53,10 @@ export default function Questions() {
 						Non cammino, ma mi muovo in fretta,
 						di caldo e di vento porto una carezza.
 					</p>
-					<span><b>Chi sono?</b></span>
+					<span className='chiSono'><b>Chi sono?</b></span>
+					<div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
+						{chiara && <img className='chiaraX' src="/chiaraX-removebg-preview.png" alt="chiara" />}
+					</div>
 					<div className='questionsGroup'>
 						<div className='questions2'>
 							<span className={firstQuestions.first ? 'question' : 'questionNo'} onClick={() => handleWrong("first", setFirstQuestions)}>
@@ -79,7 +86,10 @@ export default function Questions() {
 						Sono elegante, moderno e un po’ tecnologico,
 						di certo non sono un oggetto nostalgico.
 					</p>
-					<span><b>Chi sono?</b></span>
+					<span className='chiSono'><b>Chi sono?</b></span>
+					<div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
+						{chiara && <img className='chiaraX' src="/chiaraX-removebg-preview.png" alt="chiara" />}
+					</div>
 					<div className='questionsGroup'>
 						<div className='questions2'>
 							<span className={secondQuestions.first ? 'question' : 'questionNo'} onClick={() => handleWrong("first", setSecondQuestions)}>
@@ -109,7 +119,10 @@ export default function Questions() {
 						Sono un vortice d’aria che crea lo stile perfetto,
 						con tanti accessori ti rendo l’effetto che hai nel petto.
 					</p>
-					<span><b>Chi sono?</b></span>
+					<span className='chiSono'><b>Chi sono?</b></span>
+					<div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
+						{chiara && <img className='chiaraX' src="/chiaraX-removebg-preview.png" alt="chiara" />}
+					</div>
 					<div className='questionsGroup'>
 						<div className='questions2'>
 							<span className={thirdQuestions.first ? 'question' : 'questionRight'} onClick={() => handleRight("first", setThirdQuestions)}>
@@ -131,5 +144,6 @@ export default function Questions() {
 				</>
 			}
 		</div>
+		</>
 	)
 }

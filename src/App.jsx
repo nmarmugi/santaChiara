@@ -11,6 +11,7 @@ function App() {
   const [load, setLoad] = useState(true);
   const [point, setPoint] = useState(0);
   const [pressButton, setPressButton] = useState(false);
+  const [open, setOpen] = useState(false)
   let audio = new Audio(audios)
 
   const start = () => {
@@ -57,9 +58,27 @@ function App() {
           <div className="containerAirWrap">
             <span>HAI VINTO!</span>
             <div className="airWrap">
-              <img src="/bamba-ceramiccare-2in1-airglam-b.png" alt="Air wrap" />
+              {!open && <img src="/mail_7286125.png" alt="Mail close" onClick={() => {
+                setTimeout(() => {
+                    setPoint(4)
+                }, 2000)
+                setOpen(true);
+                }} />}
+              {open && <img src="/mail_3744367.png" alt="Mail close" />}
             </div>
           </div>
+        }
+        {
+          point === 4 &&
+        <div className="containerLetter">
+          <div>
+            Tanti Auguri di Natale amore mio!
+            Siccome quest'anno hai fatto la brava
+            ecco qua il premio per un quiz difficilissimo!
+            <img className="premio" src="/bamba-ceramiccare-2in1-airglam-b.png" alt="Air Wrap"></img>
+            <img className="yago" src="/yago-removebg-preview.png" alt="Yago" />
+          </div>
+        </div>
         }
       </div>
     </GlobalState.Provider>
