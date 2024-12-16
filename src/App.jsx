@@ -66,6 +66,7 @@ function App() {
                 }} />}
               {open && <img src="/mail_3744367.png" alt="Mail close" />}
             </div>
+            <span>APRI LA BUSTA!</span>
           </div>
         }
         {
